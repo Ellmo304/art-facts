@@ -1,0 +1,23 @@
+NameCapture my name is {USFirstName}
+NameCapture my name is {UKFirstName}
+
+
+ArtistCheck tell me about {Artist}
+ArtistCheck talk about {Artist}
+ArtistCheck talk to me about {Artist}
+ArtistCheck what are some facts about {Artist}
+ArtistCheck facts about {Artist}
+ArtistCheck what about {Artist}
+ArtistCheck how about {Artist}
+ArtistCheck i want to know about {Artist}
+ArtistCheck i want to hear about {Artist}
+ArtistCheck i'd like to know about {Artist}
+ArtistCheck i'd like to hear about {Artist}
+
+
+RandomArtFact art check
+RandomArtFact random art check
+RandomArtFact random art fact
+
+
+AMAZON.StopIntent goodbye

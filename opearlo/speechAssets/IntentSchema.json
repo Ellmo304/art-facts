@@ -1,0 +1,46 @@
+{
+  "intents": [
+    {
+      "intent": "NameCapture",
+      "slots": [
+        {
+          "name": "USFirstName",
+          "type": "AMAZON.US_FIRST_NAME"
+        },
+        {
+          "name": "UKFirstName",
+          "type": "AMAZON.GB_FIRST_NAME"
+        }
+      ]
+    },
+    {
+      "intent": "ArtistCheck",
+      "slots":
+      [
+        {
+          "name": "Artist",
+          "type": "LIST_OF_ARTISTS"
+        }
+      ]
+    },
+    {
+      "intent": "RandomArtFact"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+
+}

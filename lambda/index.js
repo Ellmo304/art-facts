@@ -59,7 +59,7 @@ const handlers = {
         }
         if (chosenArtist) {
           myHeardFacts.push(chosenArtist.id);
-          this.emit(':ask', `Welcome back ${userName}. Here's your random art fact of the day. ${chosenArtist.name} ${chosenArtist.alive} ${chosenArtist.nationality} and some of ${chosenArtist.gender} famous works include: ${convertArrayToString(chosenArtist.famous_works)} Would you like to hear about another artist?`, ' Would you like to hear about another artist?');
+          this.emit(':ask', `Welcome back ${userName}! Here's your random art fact of the day. ${chosenArtist.name} ${chosenArtist.alive} ${chosenArtist.nationality}, and some of ${chosenArtist.gender} famous works include: ${convertArrayToString(chosenArtist.famous_works)} Would you like to hear about another artist?`, ' Would you like to hear about another artist?');
         } else {
           this.emit(':ask', 'Sorry, there was a problem with art facts. Please try again.', 'Please try again.');
         }
@@ -111,7 +111,7 @@ const handlers = {
       }
     }
     if(artist) {
-      this.emit(':ask', `${artist.name} ${artist.alive} ${artist.nationality} and some of ${artist.gender} famous works include: ${convertArrayToString(artist.famous_works)} Would you like to hear about another artist?`, 'Would you like to hear about another artist?');
+      this.emit(':ask', `${artist.name} ${artist.alive} ${artist.nationality}, and some of ${artist.gender} famous works include: ${convertArrayToString(artist.famous_works)} Would you like to hear about another artist?`, 'Would you like to hear about another artist?');
     } else {
       OpearloAnalytics.registerVoiceEvent(this.event.session.user.userId, 'Custom', 'No Artist Match', {
         'No Artist Match': requestArtist
@@ -145,7 +145,7 @@ const handlers = {
       }
       if (chosenArtist) {
         myHeardFacts.push(chosenArtist.id);
-        this.emit(':ask', `Here's your art fact of the day. ${chosenArtist.name} was ${chosenArtist.nationality} and some of their famous works include ${convertArrayToString(chosenArtist.famous_works)} Would you like to hear about another artist?`, ' Would you like to hear about another artist?');
+        this.emit(':ask', `Here's your art fact of the day. ${chosenArtist.name} was ${chosenArtist.nationality}, and some of their famous works include ${convertArrayToString(chosenArtist.famous_works)} Would you like to hear about another artist?`, ' Would you like to hear about another artist?');
       } else {
         this.emit(':ask', 'Sorry, there was a problem with art facts. Please try again.', 'Please try again.');
       }

@@ -54,6 +54,9 @@ var mainStateHandlers = Alexa.CreateStateHandler(constants.states.MAIN, {
 
   'ArtistCheck': function() {
     var requestArtist = this.event.request.intent.slots.Artist.value;
+    if (!requestArtist) {
+      this.emitWithState('AMAZON.HelpIntent');
+    }
     let artist = false;
     for (var i = 0; i < artists.length; i ++) {
       if (artists[i].name.toLowerCase() === requestArtist.toLowerCase()) {
